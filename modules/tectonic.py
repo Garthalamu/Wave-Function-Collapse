@@ -1,4 +1,4 @@
-from voronoi import VoronoiGenerator
+from .voronoi import VoronoiGenerator
 import numpy as np
 import math
 from scipy.ndimage import gaussian_filter
