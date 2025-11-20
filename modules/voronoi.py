@@ -1,6 +1,7 @@
 import numpy as np
+from .generatorbase import GeneratorBase
 
-class VoronoiGenerator:
+class VoronoiGenerator(GeneratorBase):
     def __init__(self, size: int, clusters: int, iterations: int=0, seed: int=None):
         assert size > 0, "Size must be positive."
         assert clusters > 0, "Number of clusters must be more than 1."

@@ -2,8 +2,9 @@ from voronoi import VoronoiGenerator
 import numpy as np
 import math
 from scipy.ndimage import gaussian_filter
+from .generatorbase import GeneratorBase
 
-class TectonicGenerator:
+class TectonicGenerator(GeneratorBase):
     def __init__(self,
                  size: int,
                  smoothing: float=0.0,
